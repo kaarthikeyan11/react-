@@ -3,7 +3,7 @@ import './App.css';
 import React,{useState,useRef,onclick} from 'react';
 import { useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
-
+import Home from '../src/paged/home';
 // const  App=()=>{
 
   
@@ -116,37 +116,33 @@ import ReactDOM from 'react-dom/client';
 export default function App(){
 
 
-  const [name, setName] = useState('');
-  const [age, setAge] = useState('');
-  const [address, setAddress] = useState('');
-  const [qualification, setQualification] = useState('');
-  const [experience, setExperience] = useState('');
+  // const [name, setName] = useState('');
+  // const [age, setAge] = useState('');
+  // const [address, setAddress] = useState('');
+  // const [qualification, setQualification] = useState('');
+  // const [experience, setExperience] = useState('');
 
  
 
-  const handleClear = () => {
-    setName('');
-    setAge('');
-    setAddress('');
-    setQualification('');
-    setExperience('');
-  };
+  // const handleClear = () => {
+  //   setName('');
+  //   setAge('');
+  //   setAddress('');
+  //   setQualification('');
+  //   setExperience('');
+  // };
 
-
-
-
-
-
-
-  const handleSubmit = (event) => {
-    event.preventDefault(); 
+  // const handleSubmit = (event) => {
+  //   event.preventDefault(); 
     
-    alert("Form submitted successfully!"); 
-  };
+  //   alert("Form submitted successfully!"); 
+  // };
   return(
-    <div >
-      <form onSubmit={handleSubmit}>
-    <div style={{ textAlign: 'center', fontSize:'30px' }}>Registeration Form
+    // <div  style={{backgroundColor: "lightblue"}}>
+      <div>
+        <Home/>
+      {/* <form onSubmit={handleSubmit}>
+    <div style={{ textAlign: 'center', fontSize:'30px' }}>Registration Form
  </div>
     <div style={{ textAlign: 'left', marginBottom: '20px' }}>
         <label style={{ marginRight: '30px' }}>Name</label>
@@ -186,7 +182,7 @@ export default function App(){
       <button style={{width:'100px',height:'30px'}} type='button' onClick={handleClear}>
         clear</button>
     </div>
-    </form>
+    </form> */}
 </div>
   )
 }
