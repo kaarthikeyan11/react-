@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import { BrowserRouter,Route,Routes } from 'react-router-dom';
@@ -7,6 +7,9 @@ import Layout from './paged/layout';
 import Home from './paged/home';
 import Registration from './paged/registration';
 import Aboutas from './paged/aboutas';
+import Comp from './paged/components';
+import Props from './paged/props';
+import Button from './paged/event';
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
 //   <React.StrictMode>
@@ -19,6 +22,7 @@ import Aboutas from './paged/aboutas';
 // // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 // reportWebVitals();
 export default function App() {
+  const a="super";
   return (
     <BrowserRouter>
       <Routes>
@@ -26,6 +30,9 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="registration" element={<Registration />} />
           <Route path="aboutas" element={<Aboutas/>}/>
+          <Route path="components" element={<Comp/>}></Route>
+          <Route path="props" element={<Props brand= {a}/>}></Route>
+          <Route path="event" element={<Button/>}></Route>
         </Route>
       </Routes>
     </BrowserRouter>

@@ -20,6 +20,15 @@ const Layout = () => {
           <li>
             <Link to="/aboutas">About As</Link>
           </li>
+          <li>
+            <Link to="/components">components</Link>
+          </li>
+          <li>
+            <Link to="/props">Props</Link>
+          </li>
+          <li>
+            <Link to="/event">button</Link>
+          </li>
         </ul>
       </nav>
 
