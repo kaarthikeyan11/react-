@@ -27,7 +27,6 @@ export default function Registration(){
       alert("Form submitted successfully!"); 
     };
     return(
-      // <div  style={{backgroundColor: "lightblue"}}>
         <div>
         
         <form onSubmit={handleSubmit}>

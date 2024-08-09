@@ -10,6 +10,8 @@ import Aboutas from './paged/aboutas';
 import Comp from './paged/components';
 import Props from './paged/props';
 import Button from './paged/event';
+import Condition from './paged/condition';
+import Map from './paged/map';
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
 //   <React.StrictMode>
@@ -33,6 +35,8 @@ export default function App() {
           <Route path="components" element={<Comp/>}></Route>
           <Route path="props" element={<Props brand= {a}/>}></Route>
           <Route path="event" element={<Button/>}></Route>
+          <Route path="condition" element={<Condition R='0' />}></Route>
+          <Route path="map" element={<Map />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>
