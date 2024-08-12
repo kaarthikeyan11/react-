@@ -35,6 +35,9 @@ const Layout = () => {
           <li>
             <Link to="/map">maps</Link>
           </li>
+          <li>
+            <Link to="/state">state</Link>
+          </li>
         </ul>
       </nav>
 

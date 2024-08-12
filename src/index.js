@@ -12,6 +12,8 @@ import Props from './paged/props';
 import Button from './paged/event';
 import Condition from './paged/condition';
 import Map from './paged/map';
+
+import LIirst from './paged/state';
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
 //   <React.StrictMode>
@@ -37,6 +39,7 @@ export default function App() {
           <Route path="event" element={<Button/>}></Route>
           <Route path="condition" element={<Condition R='0' />}></Route>
           <Route path="map" element={<Map />}></Route>
+          <Route path="state" element={<LIirst/>}></Route>
         </Route>
       </Routes>
     </BrowserRouter>
