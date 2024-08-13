@@ -38,6 +38,12 @@ const Layout = () => {
           <li>
             <Link to="/state">state</Link>
           </li>
+          <li>
+            <Link to="/context">context</Link>
+          </li>
+          <li>
+            <Link to="/url">custom</Link>
+          </li>
         </ul>
       </nav>
 
