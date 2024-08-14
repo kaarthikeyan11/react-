@@ -17,6 +17,8 @@ import LIirst from './paged/state';
 import Firsty from './paged/context';
 import O from './paged/cutom';
 import H from './paged/url';
+import That from './paged/file';
+import Formsstar from './paged/registrationform';
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
 //   <React.StrictMode>
@@ -45,6 +47,8 @@ export default function App() {
           <Route path="state" element={<LIirst/>}></Route>
           <Route path="context" element={<Firsty/>}></Route>
           <Route path="url" element={<H/>}></Route>
+          <Route path="file" element={<That/>}></Route>
+          <Route path="registrationform" element={<Formsstar/>}></Route>
         </Route>
       </Routes>
     </BrowserRouter>

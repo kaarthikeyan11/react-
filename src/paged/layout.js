@@ -44,6 +44,12 @@ const Layout = () => {
           <li>
             <Link to="/url">custom</Link>
           </li>
+          <li>
+            <Link to="/file">input</Link>
+          </li>
+          <li>
+            <Link to="/registrationform">form</Link>
+          </li>
         </ul>
       </nav>
 
